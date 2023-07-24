@@ -1,0 +1,21 @@
+{
+  "name": "img-gen-ai",
+  "version": "1.0.0",
+  "description": "This app create img with AI",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon main.js",
+    "start": "node main.js"
+  },
+  "author": "Synytskyi",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "config": "^3.3.9",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.0"
+  }
+}
