@@ -9,10 +9,18 @@
     name='prompt'
   />
   <select name='size' class='form-control mb-2'>
-    <option value=''></option>
-    <option value=''></option>
-    <option value=''></option>
+    <option value='256x256'>Small</option>
+    <option value='512x512'>Medium</option>
+    <option value='1024x1024'>Big</option>
   </select>
   <input type='number' class='form-control mb-2' name='number' value='1' />
   <button type='submit' class='btn btn-primary'>Generate</button>
 </form>
+
+{{#if images}}
+  <div class='row'>
+    {{#each images}}
+      <img src='{{this.url}}' class='img-fluid round' />
+    {{/each}}
+  </div>
+{{/if}}
